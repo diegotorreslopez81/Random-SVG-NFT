@@ -22,19 +22,15 @@
   </a>
 </p>
 
-<img src="./images/RandCharacter.png" width="">
-
 <h4>
-    <a href="https://github.com/Louis3797/awesome-readme-template/">View Demo</a>
+
+    <a href="https://github.com/diegotorreslopez81/Random-SVG-NFT/issues/">Report Bug</a>
   <span> · </span>
-    <a href="https://github.com/Louis3797/awesome-readme-template">Documentation</a>
-  <span> · </span>
-    <a href="https://github.com/Louis3797/awesome-readme-template/issues/">Report Bug</a>
-  <span> · </span>
-    <a href="https://github.com/Louis3797/awesome-readme-template/issues/">Request Feature</a>
+    <a href="https://github.com/diegotorreslopez81/Random-SVG-NFT/issues/">Request Feature</a>
   </h4>
 </div>
 
+<img src="./images/RandCharacter.png" width="">
 
 Based on the idea of the Loot project, I want to build something similar, just creating a random character creation proof of concept. Here, the user just mints an NFT sending a seed word, and randomly, the Smart Contract generates an NFT with a Name, Profession, Country, and Personality, with different background color and font. In addition, the entries by default of every data can be modified.
 
@@ -42,18 +38,18 @@ Based on the idea of the Loot project, I want to build something similar, just c
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/UyI6VuciJNg/0.jpg)](https://www.youtube.com/watch?v=UyI6VuciJNg)
 
 
-Some examples of RandCharacter NFTs:
+:camera: Some examples of RandCharacter NFTs:
 
 
 <img src="./images/nft3.svg" width="200"><img src="./images/nft2.svg" width="200"><img src="./images/nft1.svg" width="200">
 
 
-## Prerequisites
+## :toolbox: Prerequisites
 
 - [Node.js](https://nodejs.org/en/download/)
 - [MetaMask wallet browser extension](https://metamask.io/download.html).
 
-## Getting Started
+## :gear: Getting Started
 
 ### Clone This Repo
 
@@ -94,10 +90,24 @@ If you're successful, you'll get something like the following CLI output:
 Minter deployed to: 0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0
 ```
 
-### Adding A Local Account To MetaMask
+### Mint your RandCharacter
 
-Open your MetaMask browser extension and change the network to `Localhost 8545`.
+Edit the file `scripts/mint.js` and write a random word as seed to randomize the NFT: `.CreateRandonCharacterNFT("whatever")`
 
-Next, import one of the accounts by adding its Private Key (for example, `0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80` to MetaMask.
+Finally, come back to the terminal window, and execute `npx hardhat run scripts/mint.js --network localhost`.
 
-If you're successful, you should see the a balance resembling something like `10000 ETH` in the wallet.
+and you will get your NFT Character Randomize.
+
+<!-- Roadmap -->
+## :compass: Roadmap
+
+* [x] Create the Smart Contract
+* [ ] Develop the Frontend
+
+## :star2: About the project
+
+Please, any feedback or comment, contact me:
+
+Diego Torres - [@0xDiegoTorres](https://twitter.com/0xDiegoTorres) 
+
+GitHub profile: [https://github.com/diegotorreslopez81](https://github.com/diegotorreslopez81)
