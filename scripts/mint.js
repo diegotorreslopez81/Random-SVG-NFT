@@ -4,7 +4,7 @@ console.log(process.env);
 
 console.log("CONTRACT_ADDRESS: " + process.env.CONTRACT_ADDRESS);
 
-const contract = require("../artifacts/contracts/NFTRandomSVG.sol/NFTRandomSVG.json");
+const contract = require("../artifacts/contracts/NFTRandomSVG.sol/CharacterRandomGenerator.json");
 const contractInterface = contract.abi;
 const contractAddress = process.env.CONTRACT_ADDRESS;
 
@@ -26,7 +26,7 @@ const nft = new ethers.Contract(
 const main = () => {
   console.log("Waiting for 5 blocks to confirm...");
   nft
-    .mint("0x8626f6940E2eb28930eFb4CeF49B2d1F2C9C1199","Polkadot","Substrate")
+    .CreateRandonCharacterNFT("patata")
     .then((tx) => tx.wait(5))
     .then((receipt) => console.log(`Confirmed! Your transaction receipt is: ${receipt.transactionHash}`))
     .catch((e) => console.log("Something went wrong", e));

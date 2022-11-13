@@ -37,6 +37,11 @@ module.exports = {
     goerli: {
         url: `https://eth-goerli.alchemyapi.io/v2/${process.env.ALCHEMY_KEY}`,
         accounts: [process.env.PRIVATE_KEY]
+    },
+    Opal: {
+      url: "https://rpc-opal.unique.network",
+      chainId: 8882, // We set 1337 to make interacting with MetaMask simpler
+      gas: 1800000,
     }
   }
 };
