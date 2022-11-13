@@ -23,7 +23,6 @@
 </p>
 
 <h4>
-
     <a href="https://github.com/diegotorreslopez81/Random-SVG-NFT/issues/">Report Bug</a>
   <span> · </span>
     <a href="https://github.com/diegotorreslopez81/Random-SVG-NFT/issues/">Request Feature</a>
